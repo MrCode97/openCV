@@ -14,3 +14,5 @@ cv2.VideoCapture(0)            number of camera (0 -> webcam)
 
 cap.release                    Don't forget to release
 out.release                    Don't forget to release
+
+cv2.VideoWriter_fourcc(*'XVID')                            DIVX, XVID, MJPG, X264, WMV1, WMV2
