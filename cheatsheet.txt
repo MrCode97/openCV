@@ -8,4 +8,9 @@ cv2.namedWindow('title of window', cv2.WINDOW_AUTOSIZE)   cv2.WINDOW_AUTOSIZE (d
                                                           cv2.WINDOW_NORMAL allows to resize
 
 cv2.waitKey(0)                 default (for 32bit)
-cv2.waitKey(0) & 0xFF          64bit 
+cv2.waitKey(0) & 0xFF          64bit
+
+cv2.VideoCapture(0)            number of camera (0 -> webcam)
+
+cap.release                    Don't forget to release
+out.release                    Don't forget to release
