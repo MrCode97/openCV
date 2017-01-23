@@ -1,0 +1,11 @@
+### CheatSheet - OpenCV ###
+
+cv2.imread(example.jpg, 1)   -1    cv2.IMREAD_COLOR
+                              0    cv2.IMREAD_GRAYSCALE
+                              1    cv2.IMREAD_UNCHANGED
+
+cv2.namedWindow('title of window', cv2.WINDOW_AUTOSIZE)   cv2.WINDOW_AUTOSIZE (default)
+                                                          cv2.WINDOW_NORMAL allows to resize
+
+cv2.waitKey(0)                 default (for 32bit)
+cv2.waitKey(0) & 0xFF          64bit 
