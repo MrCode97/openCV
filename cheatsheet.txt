@@ -1,5 +1,6 @@
 ### CheatSheet - OpenCV ###
 
+---images load/write,.. ---
 cv2.imread(example.jpg, 1)   -1    cv2.IMREAD_COLOR
                               0    cv2.IMREAD_GRAYSCALE
                               1    cv2.IMREAD_UNCHANGED
@@ -16,3 +17,37 @@ cap.release                    Don't forget to release
 out.release                    Don't forget to release
 
 cv2.VideoWriter_fourcc(*'XVID')                           DIVX, XVID, MJPG, X264, WMV1, WMV2
+
+
+
+---drawing---
+Coordinate system in OpenCV:
+0----------10---> [x]
+| (1|1)
+|         (10|2)
+|
+|     (7|4)
+5
+|
+[y]
+
+cv2.line(img, (pStartX, pStartY), (pEndX, pEndY), (color), (thickness))
+  cv2.line(img, (128, 384), (384, 384), (255, 255, 255), 2)
+
+cv2.rectangle(img, (point top-left), (point bottom-right), (color), thickness)
+  cv2.rectangle(img, (136, 350), (376, 370), (0, 0, 255), 1)
+
+cv2.circle(img, (center), radius, (color), thickness)                                           # thickness (-1) -> filled
+  cv2.circle(img, (312, 175), 20, (0, 0, 0), -1)
+
+cv2.ellipse(img, (center), (|up-wards|, |side-wards|), rotation*, startAngle, stopAngle, (color), thickness)
+1*rotation of ellipse in anti-clockwise direction
+2*startAngle and endAngle denotes the starting and ending of ellipse arc measured in clockwise direction from major axis
+  cv2.ellipse(img, (256, 246), (60, 30), 0, 0, 180, (0, 0, 0), -1)
+
+points = np.array([[Px1, Py1], [Px2, Py2], [Px3, Py3], ..., ], np.int32)
+  cv2.polylines(img, [points], True, (255, 255, 255)) #255.255.255 = white
+
+#font = cv2.FONT_HERSHEY_DUPLEX -> num[0:7] -> font = 0; 1 .., 7
+cv2.putText(img, 'text', (center), font, Size, (color), thickness, cv2.LINE_AA)
+  cv2.putText(img, 'OpenCV', (128, 124), 5, 2.2, (0, 0, 0), 2, cv2.LINE_AA)
