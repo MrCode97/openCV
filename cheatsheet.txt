@@ -21,6 +21,7 @@ cv2.VideoWriter_fourcc(*'XVID')                           DIVX, XVID, MJPG, X264
 
 
 
+
 ---drawing---
 Coordinate system in OpenCV:
 0----------10---> [x]
