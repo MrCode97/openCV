@@ -6,7 +6,7 @@ http://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/
 ###### (By Adrian Rosebrock on October 24, 2016).
 
 ### OpenCV 3.2.0 on Ubuntu 16 (Python 2.7):
-..
+/ImageProcessing
 
 ### OpenCV 3.1.0 on Ubuntu 14 (Python 2.7):
 /basics/
