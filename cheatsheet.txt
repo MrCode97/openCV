@@ -128,5 +128,44 @@ cv2.BORDER_WRAP
 
 ..for better understanding compare:
 (git: MrCode97)
-/basics/border_wrap.jpg
-/basics/chess1.jpg
+OpenCV/basics/border_wrap.jpg
+OpenCV/basics/chess1.jpg
+
+
+
+
+---mask---
+
+# convert 
+convertedFrame = cv2.cvtColor(src/input, code)
+example:  hsv = cv2.cvtColor(frame, cv2.COLOR)
+          hls = cv2.cvtColor(frame, cv2.COLOR_BGR2HLS)
+          lab = cv2.cvtColor(frame, cv2.COLOR_BGR2LAB)
+          luv = cv2.cvtColor(frame, cv2.COLOR_BGR2LUV)
+          rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+          YCbCr = cv2.cvtColor(frame, cv2.COLOR_BGR2YCR_CB)
+          ...
+
+# define (color-)range
+lower_color = np.array([hue, saturation, value])    # it's in 'HSV'-format
+upper_color = np.array([hue, saturation, value])
+
+example:  lower_green = np.array([40,30,30])
+          upper_green = np.array([70,120,125])
+
+# get the HSV from RGB:
+>>> red = np.uint8([[[255, 0, 0 ]]])
+>>> hsv_red = cv2.cvtColor(red, cv2.COLOR_BGR2HSV)
+>>> print hsv_red
+[[[120 255 255]]]
+# Note that there are a lot of diffrent red-colors, so you got to know which color-code your color is or have a look with a graphic-program.
+
+# For the range you need to define a range:
+=> [H-10, 100, 100] -> [H+10, 100, 100]
+  H (hue)         ->  +/- 10
+  S (saturation)  ->  lower_color = ~100, upper_color = ~255
+  V (value)       ->  lower_color = ~100, upper_color = ~255
+# this case:
+  HSV-lower_red = [110, 100, 100]
+  HSV-upper_red = [130, 255, 255]
+*src: http://docs.opencv.org/master/df/d9d/tutorial_py_colorspaces.html
