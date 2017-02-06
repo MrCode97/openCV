@@ -153,12 +153,12 @@ upper_color = np.array([hue, saturation, value])
 example:  lower_green = np.array([40,30,30])
           upper_green = np.array([70,120,125])
 
-# get the HSV from RGB:
->>> red = np.uint8([[[255, 0, 0 ]]])
->>> hsv_red = cv2.cvtColor(red, cv2.COLOR_BGR2HSV)
->>> print hsv_red
+# get the HSV from BGR:                             # for RGB just use: cv2.COLOR_RGB2HSV
+>>> blue = np.uint8([[[255, 0, 0 ]]])
+>>> hsv_blue = cv2.cvtColor(blue, cv2.COLOR_BGR2HSV)
+>>> print hsv_blue
 [[[120 255 255]]]
-# Note that there are a lot of diffrent red-colors, so you got to know which color-code your color is or have a look with a graphic-program.
+# Note that there are a lot of diffrent blue-colors, so you got to know which color-code your color is or have a look with a graphic-program.
 
 # For the range you need to define a range:
 => [H-10, 100, 100] -> [H+10, 100, 100]
@@ -166,6 +166,6 @@ example:  lower_green = np.array([40,30,30])
   S (saturation)  ->  lower_color = ~100, upper_color = ~255
   V (value)       ->  lower_color = ~100, upper_color = ~255
 # this case:
-  HSV-lower_red = [110, 100, 100]
-  HSV-upper_red = [130, 255, 255]
-*src: http://docs.opencv.org/master/df/d9d/tutorial_py_colorspaces.html
+  HSV-lower_blue = [110, 100, 100]
+  HSV-upper_blue = [130, 255, 255]
+*src: http://docs.opencv.org/master/df/d9d/tutorial_py_colorspaces.htmls
