@@ -4,7 +4,7 @@ import numpy as np
 img = cv2.imread('squares.jpg')
 rows,cols,ch = img.shape
 
-# 1. You define 3 points (on the picture [=img]) -> it gets the (vector-)plane [geometry] of them. 
+# 1. You define 3 points (on the picture [=img]) -> later it gets the (vector-)plane [geometry] of them. 
 pointsN = np.float32(([50,50],[200,50],[50,200]))
 # 2. You set the (transformed-)points where the points from above (1.) shall be afterwards. 
 #   So that it later can calc the new (transformed-)plane [=tranfromation].
