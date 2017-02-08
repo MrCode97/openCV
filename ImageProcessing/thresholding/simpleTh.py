@@ -2,6 +2,9 @@ import cv2
 
 img = cv2.imread('textT.jpg', 0)    # 0 -> geayscaled
 
+# Thresholding means you define a (threshold-)limit value and based on that the pixel gets black or white.
+# In this example we said that if the value of a pixel is 128[=>threshold limit value] or higher it becomes whihte (255) else black (0)
+#
 # demo of all in openCV implemented thresholds. Note ..'_INV' means in inverted.
 # cv2.threshold() returns two values(!) because of that I added another one -> _
 _, binary = cv2.threshold(img, 128, 255, cv2.THRESH_BINARY)
