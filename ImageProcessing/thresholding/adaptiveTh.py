@@ -22,11 +22,11 @@ adaptiveTh_Gaussian_BLUR = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_G
 
 
 
-cv2.imshow('original', img)
-cv2.imshow('original_BLUR', img1)
-cv2.imshow('Normal Thresholding', normalTh)
-cv2.imshow('Adaptive Mean Thresholding', adaptiveTh_Mean)
-cv2.imshow('Adaptive Gaussian Thresholding1', adaptiveTh_Gaussian1)
+cv2.imread('original', img)
+cv2.imread('original_BLUR', img1)
+cv2.imread('Normal Thresholding', normalTh)
+cv2.imread('Adaptive Mean Thresholding', adaptiveTh_Mean)
+cv2.imread('Adaptive Gaussian Thresholding1', adaptiveTh_Gaussian1)
 # cv2.imshow('Adaptive Gaussian Thresholding7', adaptiveTh_Gaussian7)
 cv2.imshow('Adaptive Gaussian Thresholding_BLUR', adaptiveTh_Gaussian_BLUR)
 
