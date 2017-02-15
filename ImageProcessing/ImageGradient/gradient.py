@@ -1,6 +1,8 @@
 import cv2
 import numpy as np
 
+# These function should help detect edges.
+
 # load img
 img = cv2.imread('original.jpg',0)
 
