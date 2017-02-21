@@ -17,9 +17,9 @@ ComputeKP1, des1 = sift.compute(skylineGRAY, keyPoints)   # ComputeKP gives us a
 
 
 # Option 2
-# 
+#
 sift2 = cv2.xfeatures2d.SIFT_create()
-ComputeKP2, des2 = sift.detectAndCompute(skylineGRAY, None)
+ComputeKP2, des2 = sift2.detectAndCompute(skylineGRAY, None)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
