@@ -1,0 +1,12 @@
+Scale-invariant feature transform (SIFT)
+
+That is an algorithm to detect and features in an Image. The description of local features are (mostly) invariant against translation, rotation and scaling.
+Also are they robust against diffrent lighting-scenes, (image-) noise and little geometrical deformations.
+src: wikipedia.org (edited)
+
+You might want to check this page for more information: http://docs.opencv.org/master/da/df5/tutorial_py_sift_intro.html
+
+Note: This algorithm is US-patented by University of British Columbia. To my knowledge you should be free to use it within the EU because there is no EU counterpart.
+But I guess for privat-use they won't care anyway.
+---
+The SURF-algorithm is noncommercial licensed. (..and even faster.)
