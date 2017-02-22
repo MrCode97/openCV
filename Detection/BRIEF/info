@@ -1,0 +1,7 @@
+Binary Robust Independent Elementary Features - BRIEF
+
+BRIEF is a feature descriptor -> it doesn't provide any method to find the features! So you will have to use any other feature detectors like SIFT, SURF etc.
+The paper recommends to use CenSurE-detector (called "STAR"-detector in openCV) which is a fast detector and BRIEF works even slightly better for CenSurE points than for SURF points.
+In short, BRIEF is a faster method feature descriptor calculation and matching. It also provides high recognition rate unless there is large in-plane rotation.
+
+src (edited): http://docs.opencv.org/master/dc/d7d/tutorial_py_brief.html
