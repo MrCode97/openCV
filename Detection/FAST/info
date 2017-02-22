@@ -1,0 +1,6 @@
+Features from accelerated segment test - FAST
+
+It is several times faster than other existing corner detectors.
+But it is not robust to high levels of noise. It is dependant on a threshold.
+
+more: http://docs.opencv.org/master/df/d0c/tutorial_py_fast.html
