@@ -1,0 +1,16 @@
+Brute-Force Matcher
+Create the BFMatcher object using cv2.BFMatcher(). It takes two optional params:
+First one is normType; chose which distance measurement shall be used.
+    cv2.NORM_L2 (default)     -> good for SIFT, SURF etc (cv2.NORM_L1 is also there).
+    cv2.NORM_HAMMING          -> for binary string based descriptors like ORB, BRIEF, BRISK etc,
+    cv2.NORM_HAMMING2         -> if ORB is using WTA_K == 3 or 4
+
+Second param (is boolean variable) crossCheck.
+    false (default)           ->
+    true                      -> Matcher returns only those matches with value (i,j) such that i-th descriptor in set A has j-th descriptor in set B as the best match and vice-versa.
+
+Methods are;
+  BFMatcher.match()           -> returns the best match
+  BFMatcher.knnMatch()        -> returns k best matches (where k is specified by the user)
+
+src (edited): http://docs.opencv.org/master/dc/dc3/tutorial_py_matcher.html
