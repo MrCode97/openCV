@@ -1,0 +1,9 @@
+Oriented FAST and Rotated BRIEF - ORB
+
+"ORB: An efficient alternative to SIFT or SURF":
+ORB is basically a fusion of FAST keypoint detector and BRIEF descriptor with many modifications to enhance the performance.
+The point is that you have under certain circumstances (at least for commercial-use) to pay to use those algorithm (SIFT, SURF, ..).
+ORB comes from "OpenCV Labs", brought up by Ethan Rublee, Vincent Rabaud, Kurt Konolige and Gary R. Bradski and is free to use.
+
+src (edited):   http://docs.opencv.org/master/d1/d89/tutorial_py_orb.html
+Link to paper:  http://www.willowgarage.com/sites/default/files/orb_final.pdf
