@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-searchImg = cv2.imread('skyline.jpg', 0)        # Picture that we are looking for
+searchImg = cv2.imread('cv.jpg', 0)        # Picture that we are looking for
 container = cv2.imread('cont2.jpg', 0)          # Picture which contains the picture we are looking for
 # create SIFT
 sift = cv2.xfeatures2d.SIFT_create()
@@ -23,4 +23,4 @@ for m, n in matches:
 # cv2.drawMatchesKnn expects list of lists as matches.
 result = cv2.drawMatchesKnn(searchImg, keyPoints_search, container, keyPoints_container, good, None, flags=2) # Note although it says that 'outImg' is optional I had to fill it with 'None'
 
-cv2.imwrite('bf-matchSIFT-pic.jpg', result)
+cv2.imwrite('bf-matchSIFT-picTxt.jpg', result)
