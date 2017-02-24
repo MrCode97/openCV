@@ -3,6 +3,7 @@ import cv2
 
 searchImg = cv2.imread('cv.jpg', 0)        # Picture that we are looking for
 container = cv2.imread('cont2.jpg', 0)          # Picture which contains the picture we are looking for
+
 # create SIFT
 sift = cv2.xfeatures2d.SIFT_create()
 
