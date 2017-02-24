@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-
+# Pictures are in ./res
 searchImg = cv2.imread('cover.jpg', 0)          # Picture that we are looking for
 container = cv2.imread('cont1.jpg', 0)          # Picture which contains the picture we are looking for
 
