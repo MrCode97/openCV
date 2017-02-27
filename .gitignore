@@ -1,4 +1,4 @@
 .vscode
 openCV/ImageProcessing/mask_original-frame.jpg
 openCV/ImageProcessing/mask_convertet-frame_HSV.jpg
-openCV/VideoAnalysis/Meanshift/Slw.mp4
+VideoAnalysis/Meanshift/Slw.mp4
